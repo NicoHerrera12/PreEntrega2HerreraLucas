@@ -1,0 +1,338 @@
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+a:visited{
+    color: #000;
+}
+li{
+    list-style: none;
+}
+a, a:visited{
+    text-decoration: none;
+    color: #fff;
+}
+ol, ul{
+    padding-left: 0;
+}
+
+
+/* ---HEADER--- */
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #A0C0D6;
+}
+.header__title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1rem;
+}
+.header__title:hover{
+    transform: rotateY(360deg);
+    transition: all 2s;
+}
+
+#titulo{
+    color: #000;
+}
+
+.header__img{
+    width: 50px;
+}
+
+.header__ul{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+}
+
+.header__subul{
+    display: none;
+}
+.header__a{
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #DF7356;
+    
+}
+.header__a:hover{
+    color: #fff;
+    background-color: #162464;
+    transition: all 1.5s;
+}
+
+/* HEADER @MEDIA */
+
+@media (min-width: 768px){
+    .header{
+        flex-direction: row;
+    }
+    .header__nav{
+        width: 60%;
+    }
+    .header__ul{
+        height: 100%;
+        align-items: center;
+    }
+
+}
+
+/* ---BANNER--- */
+
+.banner{
+    width: 100vw;
+    height: 40vh;
+    background-image:linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.4)), url(../assets/images/banner-pumas-prueba.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-attachment: fixed;
+}
+.banner__cont{
+    font-size: 2rem;
+	color: #F3EDDF;
+	position: absolute;
+	top: 35%;
+	left: 10%;
+}
+
+@media (min-width:768px) {
+    .banner{
+        background-repeat: repeat-x;
+        height: 50vh;
+    }
+    .banner__cont{
+        font-size: 3rem;
+        top: 40%;
+    }
+}
+
+.box{
+    display: flex;
+    padding: 1rem;
+    overflow-x: auto;
+}
+.box__card{
+    padding: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(87,174,235);
+    background: linear-gradient(180deg, rgba(87,174,235,1) 0%, rgba(28,97,145,1) 51%, rgba(1,32,38,1) 100%); 
+    border-radius: 15px;
+    
+}
+.box__card:hover{
+    box-shadow: 1px 0px 24px -6px rgba(0,0,0,1);
+	border-radius: 15px;
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+.box__a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box__img{
+    width: 210px;
+}
+
+.box__comprar{
+    background-color: #425A7D;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+.box__comprar:hover{
+    color: #fff;
+    background-color: #DF7356;
+    transition: all 1s;
+}
+.section__title{
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+/* ---FORMA DE PAGO--- */
+.forma-pago{
+    color: #000;
+}
+.forma-pago__box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.forma-pago__icon{
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+    height: 140px;
+    border: 0.5px solid #000;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.forma-pago__i{
+    font-size: 4rem;
+    color: #DF7356;
+}
+
+
+/* ---FOOTER--- */
+.footer{
+    padding: 1rem;
+    background-color: #425A7D;
+}
+
+.footer__info{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+.footer__info--shadow{
+    box-shadow: 0px -1px 0px 0px rgba(0,0,0,0.57);
+}
+.footer__redes{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+.footer__i{
+    font-size: 1.5rem;
+}
+
+.footer__i:hover{
+    transform: rotateZ(360deg);
+    font-size: 2.5rem;
+    color: #DF7356;
+    transition: all 1s;
+}
+
+/* ---CATEGORIAS--- */
+
+.categoria__title{
+    text-align: center;
+    color: #fff;
+    background-color: #DF7356;
+}
+
+.box__ver{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.box__button{
+    display: inline-block;
+    padding: 15px;
+    background-color: #425A7D;
+    border: 1px solid #000;
+    border-radius: 15px;
+    color: #fff;
+}
+.box__button:hover{
+    background-color: #DF7356;
+    transition: all 1s;
+}
+
+@media (min-width:768px){
+    .box{
+        justify-content: space-around;
+    }
+}
+
+
+
+/* ---SOBRE NOSOTROS--- */
+
+
+.sobre-nosotros__info{
+    text-align: center;
+    padding: 15px;
+}
+
+
+
+/* CONTACTO */
+
+.contacto{
+    color: #fff;
+}
+
+.contacto__info{
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgb(87,174,235);
+    background: linear-gradient(180deg, rgba(87,174,235,1) 0%, rgba(28,97,145,1) 51%, rgba(1,32,38,1) 100%); 
+    width: 100%;
+    border-radius: 10px;
+    padding: 0.5em;
+}
+.contacto__bi{
+    padding: 1em;
+}
+
+.contacto__form{
+    color: #000;
+    padding: 1em;
+    width: 100%;
+    background: rgb(87,174,235);
+    background: linear-gradient(180deg, rgba(87,174,235,1) 0%, rgba(28,97,145,1) 51%, rgba(1,32,38,1) 100%); 
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto__form input,
+.contacto__form textarea,
+.contacto__button{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background: none;
+    outline: none;
+    color: #fff;
+    border-bottom: 1px solid #162464;
+}
+
+.contacto__button{
+    background-color: #162464;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+@media (min-width: 768px){
+    .contacto{
+        display: grid;
+        grid-template-columns: 10% 30% 50% 10%;
+        grid-template-areas: 
+        "title title"
+        "info form"
+        "info form"
+        ;
+        justify-items: center;
+        height: 100%;
+    }
+    .contacto__title{
+        grid-area: title;
+        grid-column: 1/5;
+        justify-self: stretch;
+    }
+    .contacto__info{
+        grid-area: info;
+        grid-column: 2/3;
+    }
+    .contacto__form{
+        grid-area: form;
+        grid-column: 3/4;
+        width: 60%;
+    }
+}
